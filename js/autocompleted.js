@@ -15,6 +15,9 @@ var simpleAutocompled = new Class({
 	},
 	show: function(e){
 		this.contentAutoComplete = document.body.getElement('div#'+this.options.idContentList);
+		
+		console.log(this.contentAutoComplete);
+		
 		this.sVal = this.input.get('value').trim();
 		if(e.key != "esc" && this.sVal.length >= this.options.minValueLength){
 			var json = new Request.JSON({ 
