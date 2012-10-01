@@ -1,4 +1,4 @@
-var simpleAutocompled = new Class({
+var moocomplete = new Class({
 	Implements: [Options, Events],
 	options: {
 		maxLines:5,

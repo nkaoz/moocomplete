@@ -3,15 +3,30 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title>mooComplete</title>
+	<link rel="stylesheet" type="text/css" href="css\reset.css" media="all"/>
+	<style type="text/css">
+		#list-content{
+			position:absolute;
+			border:1px solid #CCCCCC;
+			cursor:pointer;
+		}
+	</style>	
+	
+	
 </head>
 <body>
 
-<input type="text" id="name" class="autocomplete">
+<input type="text" id="autocomplete" class="autocomplete">
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script>
-<script type="text/javascript" src="js/autocompleted.js"></script>
+<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script>-->
+<script type="text/javascript" src="js/mootools.core.js"></script>
+<script type="text/javascript" src="js/moocomplete.js"></script>
 <script type="text/javascript">
+window.addEvent("domready",function(){
 
+	var mc = new moocomplete($("autocomplete"));
+//var auto=new simpleAutocompled($('busqueda-txt'));
+});
 </script>
 </body>
 </html>
