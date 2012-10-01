@@ -1,2 +1,2 @@
-[mooComplete] Class for Mootools 
+[mooComplete](https://github.com/nkaoz/moocomplete) - Class for Mootools 
 ==================================================
